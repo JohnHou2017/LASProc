@@ -1,0 +1,32 @@
+<html>
+
+<!-- include all JavaScript in GeoProc JS library with the same order of GeoProc\GeoProc.htm -->
+<script src="..\GeoProc\Utility.js"> </script> 
+<script src="..\GeoProc\GeoPoint.js"> </script> 
+<script src="..\GeoProc\GeoVector.js"> </script> 
+<script src="..\GeoProc\GeoPlane.js"> </script> 
+<script src="..\GeoProc\GeoPolygon.js"> </script> 
+<script src="..\GeoProc\GeoFace.js"> </script> 
+<script src="..\GeoProc\GeoPolygonProc.js"> </script>
+
+<head></head>
+
+<body>
+    
+    <!-- include LAS Proc JavaScript -->
+    <script src="JSLASProc.js"> </script>
+    
+    <div>
+        <form>
+            <input type="file" id="LASFiles" name="lasfile" />
+            <input type="button" id="btnLASProc" value="LAS Process" onclick="LASProc();"/>   
+            <a download="cube_inside.txt" id="insideTextLink" style="display: none">Download Inside Text</a>     
+            <a download="cube_inside.las" id="insideLASLink" style="display: none">Download Inside LAS</a>     
+        </form>
+    </div>
+    
+    <div id=infoID></div>
+    
+</body>
+
+</html>

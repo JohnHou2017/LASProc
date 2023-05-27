@@ -1,0 +1,10 @@
+
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects
+\FLASProc\GeoProcTest>gfortran -o test.exe test.f03 -I..\GeoProc\module -L..\Geo
+Proc\lib -lGeoProc
+
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects
+\FLASProc\GeoProcTest>move test.exe .\bin
+
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects
+\FLASProc\GeoProcTest>

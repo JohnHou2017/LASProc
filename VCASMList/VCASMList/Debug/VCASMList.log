@@ -1,0 +1,49 @@
+﻿Build started 2/27/2016 10:31:36 PM.
+     1>Project "C:\Documents and Settings\Administrator\my documents\visual studio 2010\Projects\VCASMList\VCASMList\VCASMList.vcxproj" on node 2 (rebuild target(s)).
+     1>_PrepareForClean:
+         Deleting file "Debug\VCASMList.lastbuildstate".
+       InitializeBuildStatus:
+         Creating "Debug\VCASMList.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       _MASM:
+         Assembling [Inputs]...
+         cmd.exe /C "C:\Documents and Settings\Administrator\Local Settings\Temp\29aaeb40d3114eda914b87f83bdd85a9.cmd"
+         ml.exe /c /nologo /Zi /Fo"Debug\List.obj" /W3 /errorReport:prompt  /TaList.asm
+     1>List.asm(233): warning A6004: procedure argument or local not referenced : list2dNumber
+     1>List.asm(233): warning A6004: procedure argument or local not referenced : dpBytes
+     1>List.asm(233): warning A6004: procedure argument or local not referenced : dpAddr
+     1>List.asm(233): warning A6004: procedure argument or local not referenced : dpEndAddr
+     1>List.asm(233): warning A6004: procedure argument or local not referenced : npBytes
+     1>List.asm(233): warning A6004: procedure argument or local not referenced : npAddr
+     1>List.asm(233): warning A6004: procedure argument or local not referenced : npEndAddr
+     1>List.asm(518): warning A6004: procedure argument or local not referenced : list2dNumber
+     1>List.asm(518): warning A6004: procedure argument or local not referenced : dpBytes
+     1>List.asm(518): warning A6004: procedure argument or local not referenced : dpAddr
+     1>List.asm(518): warning A6004: procedure argument or local not referenced : dpEndAddr
+     1>List.asm(518): warning A6004: procedure argument or local not referenced : npBytes
+     1>List.asm(518): warning A6004: procedure argument or local not referenced : npAddr
+     1>List.asm(518): warning A6004: procedure argument or local not referenced : npEndAddr
+     1>List.asm(893): warning A6004: procedure argument or local not referenced : newAddr
+     1>List.asm(893): warning A6004: procedure argument or local not referenced : tempR
+       _MASM:
+         Assembling [Inputs]...
+         cmd.exe /C "C:\Documents and Settings\Administrator\Local Settings\Temp\37cdeb0c94af4af0907261160926320a.cmd"
+         ml.exe /c /nologo /Zi /Fo"Debug\ListTest.obj" /W3 /errorReport:prompt  /TaListTest.asm
+       _MASM:
+         Assembling [Inputs]...
+         cmd.exe /C "C:\Documents and Settings\Administrator\Local Settings\Temp\3223957b2f274fc38e23714aac93c0c3.cmd"
+         ml.exe /c /nologo /Zi /Fo"Debug\ListUtility.obj" /W3 /errorReport:prompt  /TaListUtility.asm
+       Link:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Documents and Settings\Administrator\my documents\visual studio 2010\Projects\VCASMList\Debug\VCASMList.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\VCASMList.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Documents and Settings\Administrator\my documents\visual studio 2010\Projects\VCASMList\Debug\VCASMList.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Documents and Settings\Administrator\my documents\visual studio 2010\Projects\VCASMList\Debug\VCASMList.lib" /MACHINE:X86 Debug\List.obj
+         Debug\ListTest.obj
+         Debug\ListUtility.obj /libpath:"C:\Program Files\Microsoft Visual Studio 10.0\VC\lib" msvcrt.lib 
+         VCASMList.vcxproj -> C:\Documents and Settings\Administrator\my documents\visual studio 2010\Projects\VCASMList\Debug\VCASMList.exe
+       Manifest:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Documents and Settings\Administrator\my documents\visual studio 2010\Projects\VCASMList\Debug\VCASMList.exe;#1" /manifest Debug\VCASMList.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Debug\VCASMList.unsuccessfulbuild".
+         Touching "Debug\VCASMList.lastbuildstate".
+     1>Done Building Project "C:\Documents and Settings\Administrator\my documents\visual studio 2010\Projects\VCASMList\VCASMList\VCASMList.vcxproj" (rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.65

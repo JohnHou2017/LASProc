@@ -1,0 +1,30 @@
+How to install assembly support extension to Visual Studio Express 2010
+------------------------------------------------------------------------
+
+1. reference http://www.deconflations.com/2011/masm-assembly-in-visual-studio-2010/
+
+2. download Visual Studio assembly extension AsmHighlighter.vsix from http://asmhighlighter.codeplex.com/releases
+
+3. open AsmHighlighter.vsix with 7-Zip or rename it to AsmHighlighter.zip then open it
+
+4. edit extension.vsixmanifest to add or replace <Edition>Pro</Edition> to <Edition>Express_All</Edition>
+   within node <VisualStudio Version="10.0">
+
+5. copy all contents to C:\Program Files\Microsoft Visual Studio 10.0\Common7\IDE\VCExpressExtensions\Platform
+   If you don't know how to find where is the extension should be installed, just Search "extension" key word for folder 
+   C:\Program Files\Microsoft Visual Studio 10.0\
+   The "Express_All" key word is also figured out through existing extension.vsixmanifest in the folders found in above search.
+
+6. open VC++ 
+
+7. create a new Empty Project in General catelog
+
+8. in Solution Explorer, select "Build Customizations" -> check "MASM ... " item
+
+9. change Configuration Properties > Linker > System> SubSystem to Console or other types
+
+10. add an existing .asm file, the step order matters, besure adding .asm files after step 8 is done, if you add an existing .asm file 
+    before step 8, you have to exclude them and re-add them back after step 8 is done.
+
+11. right click project in Solution Explorer -> Property
+    a new item "Microsoft Macro Assembly" appears, which means the extension is installed successfully.

@@ -1,0 +1,58 @@
+
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects
+\FLASProc\GeoProc>gfortran -c .\src\Utility.f03
+
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects
+\FLASProc\GeoProc>gfortran -c .\src\GeoPoint.f03
+
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects
+\FLASProc\GeoProc>gfortran -c .\src\GeoVector.f03 -I.
+
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects
+\FLASProc\GeoProc>gfortran -c .\src\GeoPlane.f03 -I.
+
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects
+\FLASProc\GeoProc>gfortran -c .\src\GeoPolygon.f03 -I.
+
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects
+\FLASProc\GeoProc>gfortran -c .\src\GeoFace.f03 -I.
+
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects
+\FLASProc\GeoProc>gfortran -c .\src\GeoPolygonProc.f03 -I.
+
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects
+\FLASProc\GeoProc>gfortran -shared -mrtd -o GeoProc.dll *.o
+
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects
+\FLASProc\GeoProc>del *.o
+
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects
+\FLASProc\GeoProc>move *.mod .\module
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects
+\FLASProc\GeoProc\geoface_module.mod
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects
+\FLASProc\GeoProc\geoplane_module.mod
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects
+\FLASProc\GeoProc\geopoint_module.mod
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects
+\FLASProc\GeoProc\geopolygonproc_module.mod
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects
+\FLASProc\GeoProc\geopolygon_module.mod
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects
+\FLASProc\GeoProc\geovector_module.mod
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects
+\FLASProc\GeoProc\utility_module.mod
+
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects
+\FLASProc\GeoProc>copy GeoProc.dll ..\GeoProcTest\bin
+        1 file(s) copied.
+
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects
+\FLASProc\GeoProc>copy GeoProc.dll ..\LASProc\bin
+        1 file(s) copied.
+
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects
+\FLASProc\GeoProc>move GeoProc.dll .\lib
+
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects
+\FLASProc\GeoProc>

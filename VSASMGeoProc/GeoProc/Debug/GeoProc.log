@@ -1,0 +1,61 @@
+﻿Build started 3/4/2016 4:17:08 AM.
+     1>Project "C:\Documents and Settings\Administrator\my documents\visual studio 2010\Projects\VSASMGeoProc\GeoProc\GeoProc.vcxproj" on node 2 (rebuild target(s)).
+     1>_PrepareForClean:
+         Deleting file "Debug\GeoProc.lastbuildstate".
+       InitializeBuildStatus:
+         Creating "Debug\GeoProc.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       _MASM:
+         Assembling [Inputs]...
+         cmd.exe /C "C:\Documents and Settings\Administrator\Local Settings\Temp\7dda317e7ec54d48bcdd876cc1735b69.cmd"
+         ml.exe /c /nologo /Zi /Fo"Debug\GeoFace.obj" /I ".\include" /W3 /errorReport:prompt  /Tasrc\GeoFace.asm
+       _MASM:
+         Assembling [Inputs]...
+         cmd.exe /C "C:\Documents and Settings\Administrator\Local Settings\Temp\275267804fed478292e302f8869f167f.cmd"
+         ml.exe /c /nologo /Zi /Fo"Debug\GeoPlane.obj" /I ".\include" /W3 /errorReport:prompt  /Tasrc\GeoPlane.asm
+       _MASM:
+         Assembling [Inputs]...
+         cmd.exe /C "C:\Documents and Settings\Administrator\Local Settings\Temp\6bea07a2d0ff4124bf3ac2179377938d.cmd"
+         ml.exe /c /nologo /Zi /Fo"Debug\GeoPoint.obj" /I ".\include" /W3 /errorReport:prompt  /Tasrc\GeoPoint.asm
+       _MASM:
+         Assembling [Inputs]...
+         cmd.exe /C "C:\Documents and Settings\Administrator\Local Settings\Temp\a2f44a32d73942c18fb7378c3cd00150.cmd"
+         ml.exe /c /nologo /Zi /Fo"Debug\GeoPolygon.obj" /I ".\include" /W3 /errorReport:prompt  /Tasrc\GeoPolygon.asm
+       _MASM:
+         Assembling [Inputs]...
+         cmd.exe /C "C:\Documents and Settings\Administrator\Local Settings\Temp\9028b477c80e45a2b71f6413a169416f.cmd"
+         ml.exe /c /nologo /Zi /Fo"Debug\GeoPolygonProc.obj" /I ".\include" /W3 /errorReport:prompt  /Tasrc\GeoPolygonProc.asm
+       _MASM:
+         Assembling [Inputs]...
+         cmd.exe /C "C:\Documents and Settings\Administrator\Local Settings\Temp\fffabbc9ebe847d8b74a27b6eee6fa03.cmd"
+         ml.exe /c /nologo /Zi /Fo"Debug\GeoVector.obj" /I ".\include" /W3 /errorReport:prompt  /Tasrc\GeoVector.asm
+       _MASM:
+         Assembling [Inputs]...
+         cmd.exe /C "C:\Documents and Settings\Administrator\Local Settings\Temp\315a2b4888834de2a1352831d564dafd.cmd"
+         ml.exe /c /nologo /Zi /Fo"Debug\List.obj" /I ".\include" /W3 /errorReport:prompt  /Tasrc\List.asm
+       _MASM:
+         Assembling [Inputs]...
+         cmd.exe /C "C:\Documents and Settings\Administrator\Local Settings\Temp\a4e7fd96aef44e738c2fa432e563604a.cmd"
+         ml.exe /c /nologo /Zi /Fo"Debug\ListGeoProc.obj" /I ".\include" /W3 /errorReport:prompt  /Tasrc\ListGeoProc.asm
+       _MASM:
+         Assembling [Inputs]...
+         cmd.exe /C "C:\Documents and Settings\Administrator\Local Settings\Temp\96dfd43444a14a52890f7e7568f02c15.cmd"
+         ml.exe /c /nologo /Zi /Fo"Debug\ListUtility.obj" /I ".\include" /W3 /errorReport:prompt  /Tasrc\ListUtility.asm
+       Lib:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\Lib.exe /OUT:"C:\Documents and Settings\Administrator\my documents\visual studio 2010\Projects\VSASMGeoProc\Debug\GeoProc.lib" /NOLOGO Debug\GeoFace.obj
+         Debug\GeoPlane.obj
+         Debug\GeoPoint.obj
+         Debug\GeoPolygon.obj
+         Debug\GeoPolygonProc.obj
+         Debug\GeoVector.obj
+         Debug\List.obj
+         Debug\ListGeoProc.obj
+         Debug\ListUtility.obj
+         GeoProc.vcxproj -> C:\Documents and Settings\Administrator\my documents\visual studio 2010\Projects\VSASMGeoProc\Debug\GeoProc.lib
+       FinalizeBuildStatus:
+         Deleting file "Debug\GeoProc.unsuccessfulbuild".
+         Touching "Debug\GeoProc.lastbuildstate".
+     1>Done Building Project "C:\Documents and Settings\Administrator\my documents\visual studio 2010\Projects\VSASMGeoProc\GeoProc\GeoProc.vcxproj" (rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.51

@@ -1,0 +1,35 @@
+﻿Build started 1/21/2016 12:01:16 AM.
+     1>Project "C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\CPPLASProc\GeoProcTest\GeoProcTest.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching "Debug\GeoProcTest.unsuccessfulbuild".
+       ClCompile:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\CPPLASProc\GeoProc" /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt GeoProcTest.cpp
+         GeoProcTest.cpp
+     1>c:\documents and settings\administrator\my documents\visual studio 2010\projects\cpplasproc\geoproc\utility.h(16): warning C4018: '<' : signed/unsigned mismatch
+                 c:\documents and settings\administrator\my documents\visual studio 2010\projects\cpplasproc\geoproctest\geoproctest.cpp(90) : see reference to function template instantiation 'bool Utility::ContainsVector<int>(std::vector<_Ty>,std::vector<int>)' being compiled
+                 with
+                 [
+                     _Ty=std::vector<int>
+                 ]
+     1>c:\documents and settings\administrator\my documents\visual studio 2010\projects\cpplasproc\geoproc\utility.h(41): warning C4018: '<' : signed/unsigned mismatch
+                 c:\documents and settings\administrator\my documents\visual studio 2010\projects\cpplasproc\geoproctest\geoproctest.cpp(97) : see reference to function template instantiation 'void Utility::FreeVectorListMemory<int>(std::vector<_Ty> &)' being compiled
+                 with
+                 [
+                     _Ty=std::vector<int>
+                 ]
+       Link:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\CPPLASProc\Debug\GeoProcTest.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\GeoProcTest.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\CPPLASProc\Debug\GeoProcTest.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\CPPLASProc\Debug\GeoProcTest.lib" /MACHINE:X86 Debug\GeoProcTest.obj
+         "C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\CPPLASProc\Debug\GeoProc.lib"
+         LINK : C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\CPPLASProc\Debug\GeoProcTest.exe not found or not built by the last incremental link; performing full link
+            Creating library C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\CPPLASProc\Debug\GeoProcTest.lib and object C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\CPPLASProc\Debug\GeoProcTest.exp
+         GeoProcTest.vcxproj -> C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\CPPLASProc\Debug\GeoProcTest.exe
+       Manifest:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\CPPLASProc\Debug\GeoProcTest.exe;#1" /manifest Debug\GeoProcTest.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Debug\GeoProcTest.unsuccessfulbuild".
+         Touching "Debug\GeoProcTest.lastbuildstate".
+     1>Done Building Project "C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\CPPLASProc\GeoProcTest\GeoProcTest.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.78

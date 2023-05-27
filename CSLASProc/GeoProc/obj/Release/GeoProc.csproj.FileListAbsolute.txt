@@ -1,0 +1,5 @@
+C:\Documents and Settings\Administrator\my documents\visual studio 2010\Projects\CSLASProc\GeoProc\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\my documents\visual studio 2010\Projects\CSLASProc\GeoProc\bin\Release\GeoProc.dll
+C:\Documents and Settings\Administrator\my documents\visual studio 2010\Projects\CSLASProc\GeoProc\bin\Release\GeoProc.pdb
+C:\Documents and Settings\Administrator\my documents\visual studio 2010\Projects\CSLASProc\GeoProc\obj\Release\GeoProc.dll
+C:\Documents and Settings\Administrator\my documents\visual studio 2010\Projects\CSLASProc\GeoProc\obj\Release\GeoProc.pdb

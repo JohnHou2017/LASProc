@@ -1,0 +1,37 @@
+﻿Build started 3/4/2016 4:16:04 AM.
+     1>Project "C:\Documents and Settings\Administrator\my documents\visual studio 2010\Projects\VSASMGeoProc\GeoProcTest\GeoProcTest.vcxproj" on node 3 (rebuild target(s)).
+     1>_PrepareForClean:
+         Deleting file "Debug\GeoProcTest.lastbuildstate".
+       InitializeBuildStatus:
+         Creating "Debug\GeoProcTest.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       _MASM:
+         Assembling [Inputs]...
+         cmd.exe /C "C:\Documents and Settings\Administrator\Local Settings\Temp\0713eec2df52477cb6feed4d36f584ae.cmd"
+         ml.exe /c /nologo /Zi /Fo"Debug\GeoProcTest.obj" /I "..\GeoProc\include" /W3 /errorReport:prompt  /TaGeoProcTest.asm
+       _MASM:
+         Assembling [Inputs]...
+         cmd.exe /C "C:\Documents and Settings\Administrator\Local Settings\Temp\aabfc7895d52494795a6c4a473333ec4.cmd"
+         ml.exe /c /nologo /Zi /Fo"Debug\ListTest.obj" /I "..\GeoProc\include" /W3 /errorReport:prompt  /TaListTest.asm
+       ManifestResourceCompile:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\GeoProcTest.exe.embed.manifest.res" Debug\GeoProcTest_manifest.rc 
+       Link:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Documents and Settings\Administrator\my documents\visual studio 2010\Projects\VSASMGeoProc\Debug\GeoProcTest.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\GeoProcTest.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Documents and Settings\Administrator\my documents\visual studio 2010\Projects\VSASMGeoProc\Debug\GeoProcTest.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Documents and Settings\Administrator\my documents\visual studio 2010\Projects\VSASMGeoProc\Debug\GeoProcTest.lib" /MACHINE:X86 Debug\GeoProcTest.exe.embed.manifest.res
+         Debug\GeoProcTest.obj
+         Debug\ListTest.obj /libpath:"C:\Program Files\Microsoft Visual Studio 10.0\VC\lib" msvcrt.lib /libpath:..\Debug GeoProc.lib 
+       Manifest:
+         Deleting file "Debug\GeoProcTest.exe.embed.manifest".
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\GeoProcTest.exe.embed.manifest" /manifest Debug\GeoProcTest.exe.intermediate.manifest
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\GeoProcTest.exe.embed.manifest.res" Debug\GeoProcTest_manifest.rc 
+       LinkEmbedManifest:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Documents and Settings\Administrator\my documents\visual studio 2010\Projects\VSASMGeoProc\Debug\GeoProcTest.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\GeoProcTest.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Documents and Settings\Administrator\my documents\visual studio 2010\Projects\VSASMGeoProc\Debug\GeoProcTest.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Documents and Settings\Administrator\my documents\visual studio 2010\Projects\VSASMGeoProc\Debug\GeoProcTest.lib" /MACHINE:X86 Debug\GeoProcTest.exe.embed.manifest.res
+         Debug\GeoProcTest.obj
+         Debug\ListTest.obj /libpath:"C:\Program Files\Microsoft Visual Studio 10.0\VC\lib" msvcrt.lib /libpath:..\Debug GeoProc.lib 
+         GeoProcTest.vcxproj -> C:\Documents and Settings\Administrator\my documents\visual studio 2010\Projects\VSASMGeoProc\Debug\GeoProcTest.exe
+       FinalizeBuildStatus:
+         Deleting file "Debug\GeoProcTest.unsuccessfulbuild".
+         Touching "Debug\GeoProcTest.lastbuildstate".
+     1>Done Building Project "C:\Documents and Settings\Administrator\my documents\visual studio 2010\Projects\VSASMGeoProc\GeoProcTest\GeoProcTest.vcxproj" (rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.59

@@ -1,0 +1,10 @@
+
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects
+\FLASProc\LASProc>gfortran -o LASProc.exe LASProc.f03 -I..\GeoProc\module -L..\G
+eoProc\lib -lGeoProc
+
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects
+\FLASProc\LASProc>move LASProc.exe .\bin
+
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects
+\FLASProc\LASProc>

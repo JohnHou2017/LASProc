@@ -1,0 +1,7 @@
+C:\Documents and Settings\Administrator\my documents\visual studio 2010\Projects\CSLASProc\CSLASProc\bin\Debug\CSLASProc.exe
+C:\Documents and Settings\Administrator\my documents\visual studio 2010\Projects\CSLASProc\CSLASProc\bin\Debug\CSLASProc.pdb
+C:\Documents and Settings\Administrator\my documents\visual studio 2010\Projects\CSLASProc\CSLASProc\bin\Debug\GeoProc.dll
+C:\Documents and Settings\Administrator\my documents\visual studio 2010\Projects\CSLASProc\CSLASProc\bin\Debug\GeoProc.pdb
+C:\Documents and Settings\Administrator\my documents\visual studio 2010\Projects\CSLASProc\CSLASProc\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\my documents\visual studio 2010\Projects\CSLASProc\CSLASProc\obj\x86\Debug\CSLASProc.exe
+C:\Documents and Settings\Administrator\my documents\visual studio 2010\Projects\CSLASProc\CSLASProc\obj\x86\Debug\CSLASProc.pdb

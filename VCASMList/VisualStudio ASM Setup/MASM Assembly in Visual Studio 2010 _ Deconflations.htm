@@ -1,0 +1,389 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>  MASM Assembly in Visual Studio 2010 | Deconflations</title>
+
+<script src="MASM%20Assembly%20in%20Visual%20Studio%202010%20_%20Deconflations_files/jquery-1.js" type="text/javascript"></script>
+<script type="text/javascript">
+var $j = jQuery.noConflict();
+</script>
+<script src="MASM%20Assembly%20in%20Visual%20Studio%202010%20_%20Deconflations_files/tap.js" type="text/javascript"></script>
+
+<link rel="pingback" href="http://www.deconflations.com/xmlrpc.php">
+<link rel="stylesheet" href="MASM%20Assembly%20in%20Visual%20Studio%202010%20_%20Deconflations_files/style.css" type="text/css" media="screen">
+
+<link rel="SHORTCUT ICON" href="http://deconflations.com/favicon.ico">
+<link rel="alternate" type="application/rss+xml" title="Deconflations » MASM Assembly in Visual Studio 2010 Comments Feed" href="http://www.deconflations.com/2011/masm-assembly-in-visual-studio-2010/feed/">
+<link rel="stylesheet" id="cptchStylesheet-css" href="MASM%20Assembly%20in%20Visual%20Studio%202010%20_%20Deconflations_files/style_002.css" type="text/css" media="all">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.deconflations.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.deconflations.com/wp-includes/wlwmanifest.xml"> 
+<link rel="index" title="Deconflations" href="http://www.deconflations.com/">
+<link rel="start" title="Slippery Slope" href="http://www.deconflations.com/2010/slippery-slope/">
+<link rel="prev" title="Suspended Reality" href="http://www.deconflations.com/2010/suspended-reality/">
+<link rel="next" title="Using Generic Types for MVVM" href="http://www.deconflations.com/2011/using-generic-types-for-mvvm/">
+<meta name="generator" content="WordPress 3.0.5">
+<link rel="canonical" href="http://www.deconflations.com/2011/masm-assembly-in-visual-studio-2010/">
+<link rel="shortlink" href="http://www.deconflations.com/?p=183">
+
+</head>
+<body onload="toggleBG();" id="body">
+<!-- Begin Header -->
+<div id="header">
+	<div class="headerContent">
+		<a href="http://www.deconflations.com/"><img src="MASM%20Assembly%20in%20Visual%20Studio%202010%20_%20Deconflations_files/deconflations.png" title="Deconflations" alt="Deconflations" id="logo"></a>
+
+		<div id="tagline">
+			Design &amp; Interaction, Photos &amp; Code		</div>
+
+		<div id="search">
+			<form accept-charset="utf-8" method="get" action="/index.php" id="searchform">
+		    	<input style="background: transparent none repeat scroll 0% 0%;" id="s" name="s" onkeyup="toggleBG();" type="text">
+				<input id="searchsubmit" value="" type="submit">
+			</form>
+		</div>
+
+		<div class="headerTags"><a href="http://www.deconflations.com/wp-rss2.php"><img src="MASM%20Assembly%20in%20Visual%20Studio%202010%20_%20Deconflations_files/rss-feed.png"></a></div>
+	</div>
+</div>
+<div id="navBar">
+	<div id="tab-bar">
+		<ul>
+			<li class="tab" id="activeTab"><a class="tabLink" href="http://www.deconflations.com/">Blog</a></li>			<li class="tab"><a class="tabLink" href="http://www.deconflations.com/category/gallery/">Galleries</a></li>			<li class="tab"><a class="tabLink" href="http://www.deconflations.com/about/">About</a></li>		</ul>
+	</div>
+</div>
+<!-- End Header -->
+
+
+<!-- Begin Post -->
+<div class="post">
+	<a href="http://www.deconflations.com/?year=2011"><img class="postDate" src="MASM%20Assembly%20in%20Visual%20Studio%202010%20_%20Deconflations_files/2011.png"></a>
+
+  <h2 class="postTitle" onclick="togglePost(183);">
+      MASM Assembly in Visual Studio 2010      <div class="clickPrompt" id="click_prompt_183" style="display: none;">Click to expand</div>
+		   <!--echo get_permalink(ID);-->
+  </h2>
+
+	<div class="content" id="post_183" style="display: block;">
+		<div class="postContent">
+			<p>Recently I have been doing some WIn32 assembly language 
+programming, extending a simple program with some new functionality. As 
+the program grew in length and complexity I began to miss the syntax 
+highlighting, project management, and debugging abilities of Visual 
+Studio.</p>
+<p>Googling about suggesed that it was possible to get VS2010 to do what
+ I wanted but it really wasn’t so easy to get it all set up the first 
+time around.</p>
+<p>In order to save myself figuring this out again, and maybe help one 
+of you dear readers, I’m putting a step by step guide up here.</p>
+<p>Before you start it makes a lot of sense to install support for Assembly Language Syntax Highlighting which you can find on <a href="http://asmhighlighter.codeplex.com/">this CodePlex project</a>. It’s a simple download and run installer.</p>
+<h3>Step 1 : Create a clean project</h3>
+<p><em>File | New | Project…</em></p>
+<p>Expand the ‘<em>Other Project Types</em>‘ tree, Select ‘<em>Visual Studio Solutions</em>‘, and create a new ‘<em>Blank Solution</em>‘.</p>
+<p style="text-align: center;"><a href="http://www.deconflations.com/wp-content/uploads/2011/02/NewSolution.png"><img src="MASM%20Assembly%20in%20Visual%20Studio%202010%20_%20Deconflations_files/NewSolution.png" alt="Create New Solution File" title="NewSolution" height="221" width="246"></a></p>
+<p><em>File | Add | New Project…</em></p>
+<p>Expand the ‘<em>Other Languages</em>‘, ‘<em>Visual C++</em>‘, ‘<em>General</em>‘ section and create a new ‘<em>Empty Project</em>‘</p>
+<p style="text-align: center;"><a href="http://www.deconflations.com/wp-content/uploads/2011/02/NewProject.png"><img src="MASM%20Assembly%20in%20Visual%20Studio%202010%20_%20Deconflations_files/NewProject.png" alt="Create New Project" title="NewProject" class="alignnone size-full wp-image-197" height="239" width="270"></a></p>
+<h3>Step 2: Acquire the MASM options.</h3>
+<p>Now right click on the Project in the Solution Explorer and select ‘<em>Build Customizations…</em>‘</p>
+<p style="text-align: center;"><a href="http://www.deconflations.com/wp-content/uploads/2011/02/BuildCustomisationMenu.png"><img src="MASM%20Assembly%20in%20Visual%20Studio%202010%20_%20Deconflations_files/BuildCustomisationMenu.png" alt="Menu for Build Customisations" title="BuildCustomisationMenu" class="alignnone size-full wp-image-198" height="168" width="276"></a></p>
+<p>Tick the ‘<em>masm</em>‘ box and say OK.</p>
+<p style="text-align: center;"><a href="http://www.deconflations.com/wp-content/uploads/2011/02/BuildCustomisation.png"><img src="MASM%20Assembly%20in%20Visual%20Studio%202010%20_%20Deconflations_files/BuildCustomisation.png" alt="Build Customisations Dialog" title="BuildCustomisation" class="alignnone size-full wp-image-199" height="227" width="602"></a></p>
+<p>Add a new file to the project with the .asm extension by right clicking on the Project in the Solution Explorer and selecting ‘<em>Add | New Item…</em>‘ then ‘<em>Text File</em>‘. Enter a filename ending with .asm (e.g. <em>speedy.asm</em>). Say OK.</p>
+<p style="text-align: center;"><a href="http://www.deconflations.com/wp-content/uploads/2011/02/NewSource.png"><img src="MASM%20Assembly%20in%20Visual%20Studio%202010%20_%20Deconflations_files/NewSource.png" alt="Create .asm File" title="NewSource" class="alignnone size-full wp-image-201" height="202" width="281"></a></p>
+<p>Now (and if you skipped the last steps this won’t work) right click on the Project and select ‘<em>Properties</em>‘. You should see a dialog like this (Note the MASM item at the bottom of the tree). If you don’t then something went wrong.</p>
+<p style="text-align: center;"><a href="http://www.deconflations.com/wp-content/uploads/2011/02/Masm.png"><img src="MASM%20Assembly%20in%20Visual%20Studio%202010%20_%20Deconflations_files/Masm.png" alt="Masm Options Appear" title="Masm" class="alignnone size-full wp-image-202" height="318" width="441"></a></p>
+<h3>Step 3: Configure the linker</h3>
+<p>There are a few critical things to set up in the Linker options in order to get it to work: </p>
+<p>Set the following property to Windows or Console as appropriate</p>
+<p style="padding-left: 3em"><em>Configuration Properties &gt; Linker &gt; System&gt; SubSystem</em></p>
+<p style="text-align: center;"><a href="http://www.deconflations.com/wp-content/uploads/2011/02/SubSystem.png"><img src="MASM%20Assembly%20in%20Visual%20Studio%202010%20_%20Deconflations_files/SubSystem.png" alt="Select required sub system" title="SubSystem" class="alignnone size-full wp-image-203" height="312" width="439"></a></p>
+<p>Set the entry point to the name of your main method (as per the END directive – see code)</p>
+<p style="padding-left: 3em"><em>Configuration Properties &gt; Linker &gt; Advanced &gt; EntryPoint</em></p>
+<p style="text-align: center;"><a href="http://www.deconflations.com/wp-content/uploads/2011/02/EntryPoint.png"><img src="MASM%20Assembly%20in%20Visual%20Studio%202010%20_%20Deconflations_files/EntryPoint.png" alt="Specify the entry point" title="EntryPoint" class="alignnone size-full wp-image-204" height="315" width="439"></a></p>
+<h3>Step 4: Write some code &amp; Run it</h3>
+<p>Lets write a very simple assembly language program to test this out (if you want to learn about assembler you could well try <a href="http://win32assembly.online.fr/tutorials.html">Iczelions’ tutorials</a> and the <a href="http://www.masm32.com/board/">MASM Forum</a>.</p>
+<p class="code">
+<!--StartFragment-->
+</p><pre style="font-family: consolas"><span style="color: purple">.586</span>
+<span style="color: purple">.model</span>&nbsp;<span style="color: purple">flat</span>,&nbsp;<span style="color: purple">stdcall</span>&nbsp;&nbsp;&nbsp;&nbsp;
+<span style="color: purple">option</span>&nbsp;<span style="color: purple">casemap</span>&nbsp;:<span style="color: purple">none</span>&nbsp;&nbsp;&nbsp;
+
+<span style="color: green">;&nbsp;To&nbsp;get&nbsp;unicode&nbsp;support&nbsp;</span>
+<span style="color: purple">include</span>		\masm32\macros\ucmacros.asm
+&nbsp;
+<span style="color: purple">include</span>		\masm32\<span style="color: purple">include</span>\windows.inc&nbsp;
+<span style="color: purple">include</span>		\masm32\<span style="color: purple">include</span>\kernel32.inc&nbsp;
+<span style="color: purple">includelib</span>	\masm32\lib\kernel32.lib&nbsp;
+&nbsp;
+<span style="color: purple">include</span>		\masm32\<span style="color: purple">include</span>\user32.inc&nbsp;
+<span style="color: purple">includelib</span>	\masm32\lib\user32.lib		
+
+<span style="color: purple">.data</span>
+<span style="color: green">;&nbsp;WSTR&nbsp;gets&nbsp;you&nbsp;a&nbsp;unicode&nbsp;string&nbsp;definition</span>
+WSTR&nbsp;wstrTitle,&nbsp;<span style="color: red">"Hello"</span>
+WSTR&nbsp;wstrMessage,&nbsp;<span style="color: red">"World"</span>
+
+<span style="color: purple">.code</span>
+
+main:
+	<span style="color: blue">invoke</span>&nbsp;MessageBoxW,&nbsp;NULL,&nbsp;<span style="color: purple">ADDR</span>&nbsp;wstrMessage,&nbsp;<span style="color: purple">ADDR</span>&nbsp;wstrTitle,&nbsp;MB_OK
+
+	<span style="color: blue">invoke</span>&nbsp;ExitProcess,&nbsp;<span style="font-weight: 700;color: maroon">eax</span>
+<span style="color: purple">end</span>&nbsp;main</pre>
+<p><!--EndFragment-->
+</p>
+<p>NOTE: Possibly the most important thing to note here is the ‘end 
+main’ directive. This directive must be present and the name must match 
+the label where you expect execution to kick off and the ‘EntryPoint’ we
+ defined in step 3. Otherwise things simply won’t work.</p>
+<p>Hit Ctrl + Shift + B to build (or use the menus etc) and it should build and run showing a simple windows message box.</p>
+<p>Boring but proves it’s working.</p>
+<h3>Step 5: Set break points and debug it <img src="MASM%20Assembly%20in%20Visual%20Studio%202010%20_%20Deconflations_files/icon_smile.gif" alt=":)" class="wp-smiley"> </h3>
+<p>The really cool thing is that now you can set break points and step 
+through your code much as you are used to doing with C++ or C# <img src="MASM%20Assembly%20in%20Visual%20Studio%202010%20_%20Deconflations_files/icon_biggrin.gif" alt=":grin:" class="wp-smiley"> </p>
+<h3>Side Note: File extensions</h3>
+<p>A small problem that you might run into is that if you move any macro
+ definitions into their own file you need to be absolutely sure NOT to 
+call the file .asm. If you do the linker will get horribly confused and 
+go on and on and on about not being able to find the EntryPoint. I lost 
+hours trying to figure that one out! Call it something .inc instead and 
+all will be good.</p>
+<p>The other thing is that Visual Studio seems to create a larger 
+executable (even in release mode) than using masm on the command line. 
+It seems to be something to do with the way it interprets the WSTR macro
+ but I’m not 100% certain. Still if it becomes a huge issue I can always
+ compile on the command line just before release and I get to enjoy nice
+ debugging in the meantime.</p>
+<p>So, there you have it. VS2010 compiling Win32 Assembler by way of the included MASM compiler.</p>
+
+            <div class="tags">
+          		<span>see&nbsp;also</span>
+                <ul class="tagList">
+                    <li class="tagItem"><a href="http://www.deconflations.com/tag/assembler/" rel="tag">Assembler</a></li><li class="tagItem"><a href="http://www.deconflations.com/tag/masm/" rel="tag">MASM</a></li><li class="tagItem"><a href="http://www.deconflations.com/tag/visual-studio/" rel="tag">Visual Studio</a></li><li class="tagItem"><a href="http://www.deconflations.com/tag/vs2010/" rel="tag">VS2010</a></li>                </ul>
+            </div>
+		</div>
+
+		<div class="commentForm">
+			
+				<!-- Comment form -->
+				
+												<p class="commentPrompt" style="margin-top:1em;">Your thoughts are valuable... post your thoughts on this topic...</p>
+
+							<form style="margin-top: 0px; padding-top:0px;" action="http://www.deconflations.com/wp-comments-post.php" method="post" id="commentform">
+								<p style="margin-top: 0px; padding-top:0px;" align="center"><textarea name="comment" id="comment" cols="83%" rows="15" tabindex="4"></textarea></p>
+
+								<p class="userDetails"><input name="author" id="author" size="22" tabindex="1" type="text">
+									<label for="author"><small>name </small></label><br>
+									<input name="email" id="email" size="22" tabindex="2" type="text">
+									<label for="email"><small>e-mail (will not be published)</small></label>
+								</p>
+													<p class="userDetails">
+									<input name="submit" id="submit" tabindex="5" value="Submit Comment" type="submit">
+									<input name="comment_post_ID" value="183" type="hidden">
+
+									</p><p class="cptch_block"><br>		<input name="cptch_result" value="6p4=" type="hidden"><input value="Version: 2.4" type="hidden">
+		<input id="cptch_input" autocomplete="off" name="cptch_number" maxlength="2" size="2" aria-required="true" style="width:20px;margin-bottom:0;display:inline;font-size: 12px;width: 30px;" type="text"> − 1 =  one	</p>								<p></p>
+							</form>
+				
+			
+		</div>
+
+		<div class="feedbackHeader">
+       		<div class="community" onclick="togglePostComments(183)">community content (19 approved comments so far)
+			    <div class="clickPrompt" id="click_prompt_comments_183">Click to expand</div>
+		    </div>
+				<div class="feedback" id="post_comments_183">
+
+				
+
+	<div class="navigation">
+		<div class="nav-previous"><a href="http://www.deconflations.com/2011/masm-assembly-in-visual-studio-2010/comment-page-1/#comments"><span class="meta-nav">←</span> Older Comments</a></div>
+	</div> 
+	
+	<ul class="comment">
+			<li class="comment">
+		On 28 June 2015 <cite>Steyn</cite>
+		 said...		
+				<div class="commentText"><p>You saved me hours of headache…i was going crazy trying to assemble and it was just a few configuration changes. </p>
+<p>THANK YOU!!!!</p>
+</div>
+			</li>
+	
+	<li class="comment">
+		On 27 January 2015 <cite>William</cite>
+		 said...		
+				<div class="commentText"><p>Unfortunately the example you have 
+posted depends on the MASM32 SDK, which is under a restrictive license 
+which among other things prohibits open source development.</p>
+</div>
+			</li>
+	
+	<li class="comment">
+		On 28 February 2014 <cite>Laura</cite>
+		 said...		
+				<div class="commentText"><p>Great tutorial.  Helped me set up my 
+MASM project.  I created an .inc file with all my PROCs for my project, 
+but VS2012 gives me this error when I try to build my project:</p>
+<p> fatal error A1000: cannot open file : Hex.inc</p>
+<p>I don’t know how to fix this.  The .inc file is in the same directory as the rest of the project.</p>
+<p>What am I missing?  I JUST started programming in assembly and using 
+VS last month and have no clue how to get this working…  Can you help?</p>
+</div>
+			</li>
+	
+	<li class="comment">
+		On 13 November 2013 <cite>Junga</cite>
+		 said...		
+				<div class="commentText"><p>i get two errors:<br>
+1. error A1000: cannot open file : \masm32\macros\ucmacros.asm<br>
+line 6<br>
+2. error MSB3721: The command “ml.exe /c /nologo /Zi 
+/Fo”Debug\speedy.obj” /W3 /errorReport:prompt  /Taspeedy.asm” exited 
+with code 1.<br>
+line 49</p>
+<p>Maybe you know what i did wrong?</p>
+</div>
+			</li>
+	
+	<li class="comment">
+		On 21 September 2012 <cite>Wang</cite>
+		 said...		
+				<div class="commentText"><p>How it works in visual studio 2012 ？<br>
+It seems this way does not work in visual studio 2012.</p>
+</div>
+			</li>
+	
+	<li class="comment">
+		On 29 May 2012 <cite>Tim</cite>
+		 said...		
+				<div class="commentText"><p>All I get is this error on compile.  My dummy test file was called texst66.asm</p>
+<p>Tried several simple MASM sources that work fine under QEditor that 
+comes with MASM.  Every single one gives this line.  Looked up Error 1- 
+and the MSB3721- but not much out there- some CUDA devs using VS2010 for
+ MASM- </p>
+<p>any thoughts ? </p>
+<p>Nice tutorial though, just didn’t work for me.</p>
+<p>With VS2010</p>
+<p>Error	1	error MSB3721: The command “ml.exe /c /Zi 
+/Fo”Debug\texst66.obj” /W3 /errorReport:prompt  /Tatexst66.asm” exited 
+with code 1.	C:\Program 
+Files\MSBuild\Microsoft.Cpp\v4.0\BuildCustomizations\masm.targets	49	6	
+test1</p>
+</div>
+			</li>
+	
+	<li class="comment">
+		On 14 May 2012 <cite>xcrypt</cite>
+		 said...		
+				<div class="commentText"><p>Nvm, the problem I was having was solved by D-side’s comment</p>
+</div>
+			</li>
+	
+	<li class="comment">
+		On 14 May 2012 <cite>xcrypt</cite>
+		 said...		
+				<div class="commentText"><p>Very helpful tutorial, but I’m still getting a few errors:</p>
+<p>CODE:</p>
+<p>.586<br>
+.model flat, stdcall<br>
+option casemap :none</p>
+<p>; To get unicode support<br>
+include \masm32\macros\ucmacros.asm</p>
+<p>include \masm32\include\windows.inc</p>
+<p>include \masm32\include\kernel32.inc<br>
+includelib \masm32\lib\kernel32.lib</p>
+<p>include \masm32\include\user32.inc<br>
+includelib \masm32\lib\user32.lib</p>
+<p>.data</p>
+<p>; WSTR gets you a unicode string definition<br>
+WSTR wstrTitle, “Hello”<br>
+WSTR wstrMessage, “World”</p>
+<p>.code</p>
+<p>main:<br>
+	invoke MessageBoxW, NULL, ADDR wstrMessage, ADDR wstrTitle, MB_OK<br>
+	invoke ExitProcess, eax<br>
+end main</p>
+<p>DEBUG INFO:</p>
+<p>1&gt;_MASM:<br>
+1&gt;  Assembling [Inputs]…<br>
+1&gt;test.asm(19): error A2008: syntax error : WSTR<br>
+1&gt;test.asm(20): error A2008: syntax error : WSTR<br>
+1&gt;test.asm(25): error A2006: undefined symbol : wstrTitle<br>
+1&gt;test.asm(25): error A2114: INVOKE argument type mismatch : argument : 3<br>
+1&gt;test.asm(25): error A2006: undefined symbol : wstrMessage<br>
+1&gt;test.asm(25): error A2114: INVOKE argument type mismatch : argument : 2<br>
+1&gt;\masm32\macros\ucmacros.asm(13): error A2052: forced error<br>
+1&gt;C:\Program Files 
+(x86)\MSBuild\Microsoft.Cpp\v4.0\BuildCustomizations\masm.targets(49,5):
+ error MSB3721: The command “ml.exe /c /nologo /Zi /Fo”Debug\test.obj” 
+/W3 /errorReport:prompt  /Tatest.asm” exited with code 1.<br>
+1&gt;<br>
+1&gt;Build FAILED.</p>
+<p>I’m also wondering where these \masm32 includes come from, I can’t seem to find any directory on my computer like that?</p>
+<p>Thanks in advance</p>
+</div>
+			</li>
+	
+	<li class="comment">
+		On 27 April 2012 <cite>Duncan</cite>
+		 said...		
+				<div class="commentText"><p>I only looked at 32-bit.</p>
+</div>
+			</li>
+	
+	</ul>
+
+			<div class="navigation">
+				<div class="nav-next"></div>
+			</div><!-- .navigation -->
+
+
+
+</div><!-- #comments -->
+			</div>
+		</div>
+	</div>
+
+<!-- End Post -->
+
+
+
+
+<div id="footer">
+	<h2 id="cloudHead">
+    	Most Common Topics
+    </h2>    
+    <div id="tagCloud">
+        <a href="http://www.deconflations.com/tag/android/" class="tag-link-5" title="1 topic" style="font-size: 8pt;">android</a>
+<a href="http://www.deconflations.com/tag/assembler/" class="tag-link-27" title="1 topic" style="font-size: 8pt;">Assembler</a>
+<a href="http://www.deconflations.com/tag/building/" class="tag-link-46" title="1 topic" style="font-size: 8pt;">Building</a>
+<a href="http://www.deconflations.com/tag/c/" class="tag-link-11" title="3 topics" style="font-size: 12.363636363636pt;">c#</a>
+<a href="http://www.deconflations.com/tag/design/" class="tag-link-9" title="6 topics" style="font-size: 16pt;">design</a>
+<a href="http://www.deconflations.com/tag/foundations-2/" class="tag-link-45" title="1 topic" style="font-size: 8pt;">Foundations</a>
+<a href="http://www.deconflations.com/tag/gestures/" class="tag-link-22" title="1 topic" style="font-size: 8pt;">gestures</a>
+<a href="http://www.deconflations.com/tag/google/" class="tag-link-24" title="2 topics" style="font-size: 10.618181818182pt;">Google</a>
+<a href="http://www.deconflations.com/tag/house-2/" class="tag-link-44" title="1 topic" style="font-size: 8pt;">House</a>
+<a href="http://www.deconflations.com/tag/iphone/" class="tag-link-7" title="2 topics" style="font-size: 10.618181818182pt;">iPhone</a>
+<a href="http://www.deconflations.com/tag/life/" class="tag-link-3" title="2 topics" style="font-size: 10.618181818182pt;">Life</a>
+<a href="http://www.deconflations.com/tag/masm/" class="tag-link-28" title="1 topic" style="font-size: 8pt;">MASM</a>
+<a href="http://www.deconflations.com/tag/mobile/" class="tag-link-23" title="2 topics" style="font-size: 10.618181818182pt;">mobile</a>
+<a href="http://www.deconflations.com/tag/nexus-one/" class="tag-link-6" title="1 topic" style="font-size: 8pt;">nexus&nbsp;one</a>
+<a href="http://www.deconflations.com/tag/nexus%c2%a0one/" class="tag-link-17" title="1 topic" style="font-size: 8pt;">nexus&nbsp;one</a>
+<a href="http://www.deconflations.com/tag/polish/" class="tag-link-19" title="1 topic" style="font-size: 8pt;">polish</a>
+<a href="http://www.deconflations.com/tag/renovation/" class="tag-link-47" title="1 topic" style="font-size: 8pt;">Renovation</a>
+<a href="http://www.deconflations.com/tag/short%c2%a0stories/" class="tag-link-18" title="1 topic" style="font-size: 8pt;">short&nbsp;stories</a>
+<a href="http://www.deconflations.com/tag/site/" class="tag-link-4" title="2 topics" style="font-size: 10.618181818182pt;">site</a>
+<a href="http://www.deconflations.com/tag/software/" class="tag-link-36" title="1 topic" style="font-size: 8pt;">software</a>
+<a href="http://www.deconflations.com/tag/touch/" class="tag-link-21" title="1 topic" style="font-size: 8pt;">touch</a>
+<a href="http://www.deconflations.com/tag/ui/" class="tag-link-10" title="5 topics" style="font-size: 14.981818181818pt;">ui</a>
+<a href="http://www.deconflations.com/tag/visual-studio/" class="tag-link-25" title="1 topic" style="font-size: 8pt;">Visual Studio</a>
+<a href="http://www.deconflations.com/tag/vs2010/" class="tag-link-26" title="1 topic" style="font-size: 8pt;">VS2010</a>
+<a href="http://www.deconflations.com/tag/web/" class="tag-link-14" title="3 topics" style="font-size: 12.363636363636pt;">web</a>
+<a href="http://www.deconflations.com/tag/wpf/" class="tag-link-13" title="2 topics" style="font-size: 10.618181818182pt;">wpf</a>
+<a href="http://www.deconflations.com/tag/writing/" class="tag-link-16" title="1 topic" style="font-size: 8pt;">writing</a>
+<a href="http://www.deconflations.com/tag/xaml/" class="tag-link-12" title="5 topics" style="font-size: 14.981818181818pt;">xaml</a>    </div>
+</div>
+
+<div id="terminator"> Design and Content © Copyright Duncan Kimpton 2010</div>
+
+</body></html>
